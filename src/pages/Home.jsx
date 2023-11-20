@@ -7,7 +7,7 @@ import Sky from "../models/Sky"
 import Bird from "../models/Bird"
 import Plane from "../models/Plane"
 
-        {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+{/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
             POPUP
         </div>  */}
 
@@ -28,30 +28,53 @@ const Home = () => {
         return [screenScale, screenPosition, rotation];
     }
 
-    const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize()
+    const adjustPlaneForScreenSize = () => {
+        let screenScale, screenPosition;
 
 
-  return (
-    <section className="w-full h-screen remative">
-        <Canvas className="w-ful h-screen bg-transparent" camera={{ near: 0.1, far: 1000 }}>
-            <Suspense fallback={<Loader />}>
-                <directionalLight position={[1, 1, 1]} intensity={2} />
-                <ambientLight intensity={0.5} />
-                <hemisphereLight skyColor="#b1e1FF" groundColor="#000000" intensity={1}/>
-                
+        if (window.innerWidth < 768) {
+            screenScale = [1.5, 1.5, 1.5];
+            screenPosition = [0, -1.5, 0];
+        } else {
+            screenScale = [3, 3, 3];
+            screenPosition = [0, -4, -4];
+        }
 
-                <Bird />
-                <Sky />
-                <Island 
-                    position={islandPosition}
-                    scale={islandScale}
-                    rotation={islandRotation}
-                />
-                <Plane />
-            </Suspense>
-        </Canvas>
-    </section>
-  )
+        return [screenScale, screenPosition];
+    }
+
+
+    const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+    const [planeScale, planePosition] = adjustPlaneForScreenSize();
+
+
+    return (
+        <section className="w-full h-screen remative">
+            <Canvas className={`w-ful h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`} camera={{ near: 0.1, far: 1000 }}>
+                <Suspense fallback={<Loader />}>
+                    <directionalLight position={[1, 1, 1]} intensity={2} />
+                    <ambientLight intensity={0.5} />
+                    <hemisphereLight skyColor="#b1e1FF" groundColor="#000000" intensity={1} />
+
+
+                    <Bird />
+                    <Sky />
+                    <Island
+                        position={islandPosition}
+                        scale={islandScale}
+                        rotation={islandRotation}
+                        isRotating={setIsRotating}
+                    />
+                    <Plane 
+                        isRotating={isRotating}
+                        planeScale={planeScale}
+                        planePosition={planePosition}
+                        rotation={[0, 20, 0]}
+                    />
+                </Suspense>
+            </Canvas>
+        </section>
+    )
 }
 
 export default Home
