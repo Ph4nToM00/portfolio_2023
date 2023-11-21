@@ -26,7 +26,9 @@ import {
     typescript,
     php,
     symfony,
-    laravel
+    laravel,
+    prestashop,
+    python
 } from "../assets/icons";
 
 export const skills = [
@@ -124,6 +126,16 @@ export const skills = [
         imageUrl: laravel,
         name: "Laravel",
         type: "Backend",
+    },
+    {
+        imageUrl: prestashop,
+        name: "Prestashop",
+        type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Software",
     }
 ];
 
@@ -132,7 +144,7 @@ export const experiences = [
         title: "Développeur Web & PDG",
         company_name: "RiberaDev",
         icon: ribera,
-        iconBg: "#fbc3bc",
+        iconBg: "#b7e4c7",
         date: "Nov 2023 - Aujourd'hui",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",

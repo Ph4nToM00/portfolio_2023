@@ -29,6 +29,8 @@ import soundoff from './soundoff.png'
 import php from './php.svg'
 import symfony from './symfony.svg'
 import laravel from './laravel.svg'
+import prestashop from './prestashop.svg'
+import python from './python.svg'
 
 export {
     css,
@@ -61,5 +63,7 @@ export {
     soundoff,
     php,
     symfony,
-    laravel
+    laravel,
+    prestashop,
+    python
 }
