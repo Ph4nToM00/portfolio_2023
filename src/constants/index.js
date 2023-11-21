@@ -1,4 +1,4 @@
-import { svl, epitech } from "../assets/images";
+import { svl, epitech, ribera } from "../assets/images";
 import {
     car,
     contact,
@@ -128,6 +128,19 @@ export const skills = [
 ];
 
 export const experiences = [
+    {
+        title: "Développeur Web & PDG",
+        company_name: "RiberaDev",
+        icon: ribera,
+        iconBg: "#fbc3bc",
+        date: "Nov 2023 - Aujourd'hui",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
     {
         title: "Développeur Web & Résponsable Cybersécurité",
         company_name: "Serres Val de Loire",

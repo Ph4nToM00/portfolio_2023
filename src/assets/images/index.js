@@ -6,6 +6,7 @@ import tesla from './tesla.png'
 import logo from './logo.svg'
 import svl from './svl.jpg'
 import epitech from './epitech.png'
+import ribera from './ribera.png'
 
 export {
     hero,
@@ -15,5 +16,6 @@ export {
     tesla,
     logo,
     svl,
-    epitech
+    epitech,
+    ribera
 }

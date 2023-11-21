@@ -1,7 +1,52 @@
+import { projects } from '../constants';
+
+import CTA from '../components/CTA';
+
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <section className="max-container">
+      <h1 className="head-text">
+        Mes{" "}
+        <span className="blue-gradient_text font-semibold drop-shadow">
+          Projets
+        </span>
+      </h1>
+
+      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <p>
+        J'ai entrepris de nombreux projets au fil des ans, mais voici ceux qui me tiennent le plus à cœur.
+        Beaucoup d'entre eux sont open-source.
+        J'ai pu explorer de nombreuses technos, ma curiosité m'a toujours pousser à vouloir comprendre de nouvelles choses.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap my-20 gap-16">
+        {projects.map((project) => (
+          <div className='lg:w-[400px] w-full' key={project.name}>
+            <div className='block-container w-12 h-12'>
+              <div className={`btn-back rounded-xl ${project.theme}`}/>
+              <div className='btn-front rounded-xl flex justify-center items-center'>
+                <img 
+                  src={project.iconUrl}
+                  alt="Project Icon"
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+            <div className='mt-5 flex flex-col'>
+              <h4>
+                {project.name}
+              </h4>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <hr className="border-slate-200" />
+
+      <CTA />
+    </section>
   )
 }
 
