@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { svl, epitech } from "../assets/images";
 import {
     car,
     contact,
@@ -23,7 +23,10 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    php,
+    symfony,
+    laravel
 } from "../assets/icons";
 
 export const skills = [
@@ -106,6 +109,21 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: php,
+        name: "Php",
+        type: "Backend",
+    },
+    {
+        imageUrl: symfony,
+        name: "Symfony",
+        type: "Backend",
+    },
+    {
+        imageUrl: laravel,
+        name: "Laravel",
+        type: "Backend",
     }
 ];
 
@@ -113,7 +131,7 @@ export const experiences = [
     {
         title: "Développeur Web & Résponsable Cybersécurité",
         company_name: "Serres Val de Loire",
-        icon: tesla,
+        icon: svl,
         iconBg: "#accbe1",
         date: "Mai 2023 - Aujourd'hui",
         points: [
@@ -126,7 +144,7 @@ export const experiences = [
     {
         title: "Web@cademy",
         company_name: "Epitech",
-        icon: starbucks,
+        icon: epitech,
         iconBg: "#fbc3bc",
         date: "Nov 2020 - Nov 2022",
         points: [
