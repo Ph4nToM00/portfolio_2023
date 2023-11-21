@@ -1,3 +1,7 @@
+import React from 'react';
+
+import { skills } from '../constants';
+
 
 const About = () => {
   return (
@@ -17,7 +21,17 @@ const About = () => {
         <h3 className="subhead-text">Mes compétences</h3>
 
         <div className="mt-16 flex flex-wrap gap-12">
-          
+          {skills.map((skill) => (
+            <div>
+              <div>
+                <img 
+                  src={skills.imageUrl}
+                  alt={skills.name}
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

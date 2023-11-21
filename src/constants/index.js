@@ -23,9 +23,7 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript,
-    epitech,
-    svl
+    typescript
 } from "../assets/icons";
 
 export const skills = [
@@ -115,7 +113,7 @@ export const experiences = [
     {
         title: "Développeur Web & Résponsable Cybersécurité",
         company_name: "Serres Val de Loire",
-        icon: svl,
+        icon: tesla,
         iconBg: "#accbe1",
         date: "Mai 2023 - Aujourd'hui",
         points: [
@@ -128,7 +126,7 @@ export const experiences = [
     {
         title: "Web@cademy",
         company_name: "Epitech",
-        icon: epitech,
+        icon: starbucks,
         iconBg: "#fbc3bc",
         date: "Nov 2020 - Nov 2022",
         points: [
