@@ -147,10 +147,10 @@ export const experiences = [
         iconBg: "#b7e4c7",
         date: "Nov 2023 - Aujourd'hui",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Création de modules pour Prestashop.",
+            "Conception et développement de sites web.",
+            "Développement d'application mobile en React Native.",
+            
         ],
     },
     {
@@ -160,10 +160,10 @@ export const experiences = [
         iconBg: "#accbe1",
         date: "Mai 2023 - Aujourd'hui",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Développement de modules ou de fonctionnalités pour les sites sous Prestashop.",
+            "Cybersécurité, j'ai dû analyser les risques cyber et trouver des solutions pour renforcer la sécurité dans l'entreprise.",
+            "Réseau, création et configuration de serveurs apache en local pour de la dev, gestion d'utilisateurs sur le domaine, gestion des serveurs et baie de brassage de l'entreprise.",
+            
         ],
     },
     {
@@ -173,10 +173,7 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "Nov 2020 - Nov 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Apprentissage des langages de développement web en formation sur 2 ans, pour devenir développeur fullstack.",
         ],
     },
 ];
@@ -203,43 +200,29 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Création de modules Prestashop',
+        description: 'Développement de module Prestashop à la demande ou selon mes inspirations.',
+        link: 'https://addons.prestashop.com/',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'OSINT : Outils Python pour la recherche d\'informations, Peek-A-Who',
+        description: 'Peek-A-Who est un outil conçu en python et bientôt en format web pour l\'Osint, la recherche d\'information open-source.',
+        link: 'https://github.com/c0dejump/Peek-A-Who',
     },
     {
-        iconUrl: car,
+        iconUrl: summiz,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Portfolio',
+        description: 'Le portfolio, un CV numérique que j\'ai pu développer avec des technos actuelle (ReactJS, ThreeJS pour la 3D).',
+        link: 'https://github.com/Ph4nToM00/portfolio_2023',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'HAWKSCAN: Outil de scan de vulnérabilité web',
+        description: 'c\'est un outil de cybersécurité, j\'ai pu participé à ce projet en collaboration, cet outil sert à scanner les possibles vulnérabilités d\'un site web.',
+        link: 'https://github.com/Ph4nToM00/HawkScan',
     },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
 ];
